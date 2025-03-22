@@ -1,0 +1,72 @@
+# HTML5 문서 구조화
+
+최종 date: 2025년 3월 4일
+GitHub - tags: HTML
+mini tags: HTML, 구조화
+status: 작성 중
+
+# HTML5
+
+- HTML5
+    - 큰 의미 : CSS, JavaScript를 모두 포함하는 web 표준 기술
+    - 작은 의미 : web 페이지를 구성하는 HTML 마크업 언어
+
+## HTML5 주요 기능
+
+- 멀티 미디어 : 플러그인 없이 음악, 동영상 재생 가능
+- 그래픽 : 2차원, 3차원의 그래픽 구현
+- 통신 : 서버와 소켁 통신 가능 ⇒ 서버와 실시간 쌍방향 통신을 통한 실시간 채팅, 온라인 게임 가능
+- 장치 접근 : 장치 정보를 가져오거나 장치 기능 사용
+- 오프라인 및 저장소 : 인터넷에 연결되지 않은 상태에서도 응용 프로그램을 동작시킴
+- 시맨틱 웹 : 검색 엔진 같은 프로그램이 정보 분석, 자료 검색, 처리, 제공하는 지능형 웹
+- CSS3 스타일 시트
+
+## HTML5 기본 용어
+
+- 요소 : HTML 페이지를 구성하는 각 부품
+    
+    
+    | 요소 구분 | 형태 |
+    | --- | --- |
+    | 내용을 가질 수 있는 요소 | `<요소 이름>내용</요소 이름>` |
+    | 내용을 가질 수 없는 요소 | `<요소 이름 />` |
+- 태그 : 요소를 만들 때 사용하는 작성 방법
+- 속성 : 태그에 추가 정보 부여
+    - e.g. `<h1 title = “header”>Hello HTML5</h1>`
+        - title : 속성 이름
+        - “header” : 속성 값
+- 주석 : 프로그램 실행에 영향을 미치지 않으면서 설명하는 코드 ⇒ 언어마다 다름(`cmd + /`)
+
+## HTML5 페이지의 구조
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+- head 태그 속성
+    
+    
+    | 태그 | 설명 |
+    | --- | --- |
+    | meta | 웹 페이지에 추가 정보 전달 |
+    | title | 페이지 제목 지정(웹 브라우저 탭에 표시) |
+    | script | 웹 페이지에 JavaScript 추가 ⇒ 내부 : <head>와 <body>모두 사용 가능 |
+    | link | 웹 페이지에 다른 파일 추가 |
+    | style | 웹 페이지에 스타일시트 추가(CSS) ⇒ 내부 : <head>에 사용 |
+    | base | 웹 페이지의 기본 경로 지정 |
+- <style></style> 실행 방법
+    1. 내부 스타일 방법 : `<style>`를 통해 스타일시트 직접 입력
+    2. 외부 스타일 방법 : `<link href = “”>`를 사용해 스타일시트를 불러옴
+- JavaScript tlfgod qkqjq
+    1. 내부 스크립트 방법 : `<script>`를 통해 내부에서 작성
+    2. 외부 스타일 방법 : `<script src="">`를 통해 외부에서 불러옴
