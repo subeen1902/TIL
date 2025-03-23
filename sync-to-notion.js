@@ -5,6 +5,24 @@ const path = require('path');
 const fs = require('fs');
 const iconv = require('iconv-lite');
 
+function hasPreviousCommit() {
+  try {
+    execSync('git rev-parse HEAD~1');
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
+
+let changedFiles = '';
+
+if (hasPreviousCommit()) {
+  changedFiles = execSync('git diff --name-only HEAD~1 HEAD').toString().trim();
+} else {
+  // 초기 커밋일 경우, 전체 트래킹된 파일 가져오기
+  changedFiles = execSync('git ls-files').toString().trim();
+}
+
 // 1. Notion API 초기화
 const notion = new Client({ auth: process.env.NOTION_TOKEN });
 const databaseId = process.env.NOTION_DB_ID;
