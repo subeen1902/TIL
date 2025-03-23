@@ -8,7 +8,7 @@ const databaseId = process.env.NOTION_DB_ID;
 
 async function main() {
   // 1. 최신 커밋에서 변경된 파일 목록
-  const filesChanged = execSync('git diff --name-only HEAD~1 HEAD').toString().trim().split('\n');
+  const filesChanged = execSync('git ls-files').toString().trim().split('\n');
 
   for (const filePath of filesChanged) {
     const fileName = path.basename(filePath);
