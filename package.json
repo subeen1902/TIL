@@ -1,0 +1,16 @@
+{
+  "name": "til",
+  "version": "1.0.0",
+  "description": "| 타입     | 설명                       | | -------- | -------------------------- | | `add`    | 새 파일 추가               | | `fix`    | 오타/문서 오류 수정/재배치 | | `update` | 문서 내용 추가/변경        | | `rename` | 파일명 변경                |",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@notionhq/client": "^2.3.0"
+  },
+  "devDependencies": {}
+}
