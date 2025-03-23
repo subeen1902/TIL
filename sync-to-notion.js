@@ -22,7 +22,7 @@ async function main() {
           title: [{ text: { content: fileName } }],
         },
         'status': {
-          select: { name: 'push' },
+          status: { name: 'push' },
         },
         'GitHub - tags': {
           multi_select: folderTags.map(name => ({ name })),
