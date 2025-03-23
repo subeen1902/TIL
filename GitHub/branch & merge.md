@@ -48,7 +48,7 @@
 | `test/`     | 테스트 코드 추가/수정                    | `test/user-controller`    |
 | `docs/`     | 문서 작성 및 수정                        | `docs/README-update`      |
 
-## Commit Message
+## 대표적인 Commit Message
 
 | Prefix      | 설명                               | 예시 커밋 메시지                  |
 | ----------- | ---------------------------------- | --------------------------------- |
