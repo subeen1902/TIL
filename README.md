@@ -7,3 +7,4 @@
 | `update` | 문서 내용 추가/변경                |
 | `rename` | 파일명 변경                        |
 | `test`   | 문서 내용 `add`/`update` 전 테스트 |
+| `remove` | 문서 삭제                          |
